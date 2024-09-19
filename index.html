@@ -188,12 +188,12 @@
 
             </div>
                 <div class="contact-right">
-                    <form >
+                    <form name="submit-to-google-sheet">
                         <input type="text"name="Name" placeholder="Your Name " required>
                         <input type="email"name="Email" placeholder="Your Email" required>
-                        <input type="tel"name="number" placeholder="Phone Number" required>
-                        <!-- <label for="service"> </label> removed for now , i don't need label for now , to be added later -->
-                        <select name="service" id="service" required>
+                        <input type="tel"name="Number" placeholder="Phone Number" required>
+                        <!-- <label for="service"> </label>  -->
+                        <select name="Service" id="service" required>
                         <option value="" disabled selected> Select a service</option>
                         <option value="collaboration">Collaboration</option>
                         <option value="internship">Internship</option>
@@ -247,6 +247,18 @@
                 sidemenu.style.right = "-250px";
             }
         </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgK-jOESgy7s7aRoDmsVbwN7uFaFnCrcMfDCsN1roiKpvhMFiT7yvo17iutrx5-CBj/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
         
 
 </body>
