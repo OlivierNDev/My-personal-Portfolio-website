@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Olivier Niyonshima's Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/abf6bdd114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="personal-portfolio-img/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact Me </a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1> Hi, I'm <span> Olivier</span> <br> Nice to meet you !
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- about page-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I'm your go-to frontend developer, combining a passion for clean design with strong technical skills. 
+                        I specialize in crafting intuitive, responsive, and visually
+                         appealing user interfaces that not only look great but also offer
+                          seamless experiences across devices. Whether it's turning complex
+                           ideas into simple, engaging designs or bringing creativity and 
+                           functionality together, I'm dedicated to pushing the boundaries
+                            of modern web development. Let's build something amazing that
+                             stands out in today's digital landscape <span>😊</span>
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link " onclick="opentab('skills')"> Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                                <p class="tab-links" onclick="opentab('education')"> Education</p>
+                                
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
+                                    <li><span>App Development</span> <br> Building Android/iOS apps</li>
+                                    <li><span>HTML, CSS, JavaScript</span> <br> Proficient in core web technologies</li>
+                                    <li><span>CSS Frameworks</span> <br> Experience with Bootstrap, Tailwind</li>
+                                    <li><span>JavaScript Frameworks/Libraries</span> <br> Experience with React, Vue, Angular</li>
+                                    <li><span>Version Control</span> <br> Git/GitHub for collaborative development</li>
+                                    <li><span>Testing and Debugging</span> <br> Skills in unit testing and debugging</li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>August 12 2024- current </span> <br> Part-time Data Analytics at <a href="https://zubahouse.com/">Zuba House</a></li>
+                                    <li><span> July 08 2023 - July 12 2024  </span> <br> UI/UX  Design at <a href="https://www.street-bridge.org/#programs">Here4U Program</a></li>
+                                    <li><span>October 10 2022- june 18 2023</span> <br>Computer Repair Person and It Assistant  at <a href="https://done019.wixsite.com/cardxe-store">CardX Ltd</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2024-2027</span> <br>  Computer Programming and Analysis at Algonquin College </li>
+                                    <li><span>2023</span> <br> UI/UX Design Training at <a href="https://gdg.community.dev/gdg-kigali/">Google Developer Groups Kigali </a> </li>
+                                    <li><span> 2022 </span> <br> Highschool Diploma in Physics , Chemistry and Mathematics</li>
+                                    <li><span>2020-2021</span> <br> <a href="https://tiltingfutures.org/about-us/"> Global Citizen  Year Leadership camp</a></li>
+                                    <li><span>2020</span> <br>  SuaCode2 Africa course by <a href="https://nsesafoundation.com/suacode/">Nsesa Foundation </a> </li>
+                                </ul>
+                                
+                            </div>
+ 
+        
+        
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <!-- services  -->
+<div id="services">
+    <div class="container">
+    <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+             <div> 
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Design</h2>
+                <p>Building responsive, interactive, and dynamic websites using HTML, CSS, JavaScript, and modern frameworks to ensure 
+                                                a seamless user experience across devices and browsers.</p>
+                <a href="#">Learn More </a>
+        </div>
+
+        
+        <div> 
+            <i class="fa-solid fa-crop"></i>
+            <h2> UI/UX Design</h2>
+            <p> Creating intuitive and user-friendly interfaces that enhance user experience, focusing on both the visual design and the overall functionality of websites and applications.</p>
+            <a href="#">Learn More </a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+        <h2> App Development</h2>
+        <p>Developing native and cross-platform mobile applications for Android and iOS, from concept to deployment, ensuring smooth performance and user friendly interfaces.</p>
+        <a href="#">Learn More </a>
+        </div>
+
+        </div>
+
+        </div>
+
+         <!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+    <h1 class="sub-title">My Recent Work</h1>
+        
+    <div class="cointainer">
+        <h1 class="sub-title"></h1>
+        <p>Below are a selection of my recent design projects. If you'd like to see more projects, please reach out to me via <a href="mailto:olivier.niyo250@gmail.com">email</a>.</p>
+        <div class="work-list">
+            <div class="work">
+                <img src="personal-portfolio-img/images/work-1.png" >
+                <div class="layer">
+                    <h3>Zuba House E-commerce Platform </h3>
+                    <p> This is the front-end design for the Zuba House e-commerce website, which has since been further developed by my colleagues in backend development.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/work-2.png" >
+                <div class="layer">
+                    <h3>Here4You program by SFB  </h3>
+                    <p> This is the front-end design for the Zuba House e-commerce website, which has since been further developed by my colleagues in backend development.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/work-3.png" >
+                <div class="layer">
+                    <h3>Simple calculator and Python Snake Game  </h3>
+                    <p> This is the front-end design for the Zuba House e-commerce website, which has since been further developed by my colleagues in backend development.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="mailto:olivier.niyo250@gmail.com" class="btn">See More </a>
+
+    </div>
+    </div> 
+</div>
+
+
+<!-- Contact -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me </h1>
+                <p><i class="fa-regular fa-paper-plane"></i> <a href="mailto:olivier.niyo250@gmail.com">olivier.niyo250@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> +1(437)-557-7487</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Deboss00XX"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/olivier-niyonshima-aa2b36236/"><i class="fa-brands fa-linkedin"></i></a>
+      
+                </div>
+                <a href="personal-portfolio-img/images/resume_olivier_Niyonshima.pdf" download class="btn btnr"> Download My Resume</a> 
+
+            </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text"name="Name" placeholder="Your Name " required>
+                        <input type="email"name="Email" placeholder="Your Email" required>
+                        <input type="tel"name="number" placeholder="Phone Number" required>
+                        <!-- <label for="service"> </label> removed for now , i don't need label for now , to be added later -->
+                        <select name="service" id="service" required>
+                        <option value="" disabled selected> Select a service</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="internship">Internship</option>
+                        <option value="project">Project</option>
+                        <option value="other">Other</option> 
+                        </select>
+
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btnr">Submit</button>
+                    </form>
+                </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+    <p>&copy; 2020-2024 All rights reserved. Designed by Olivier.N </p>
+    </div>
+
+ </div>
+    
+
+
+        <script>
+            var tablinks =document.getElementsByClassName("tab-links");
+            var tabcontents =document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+            
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+                //everytime we click on function open menu, and when the right is 0 it will be visible.
+
+            }
+            function closemenu(){
+                sidemenu.style.right = "-250px";
+            }
+        </script>
+        
+
+</body>
+
+</html>
