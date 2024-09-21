@@ -102,6 +102,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    
 }
 .tab-titles {
     display: flex;
@@ -205,6 +206,13 @@ nav ul li a:hover::after{
     text-decoration: none;
     color:#ff004f;
    
+}
+#portifolio h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 .work-list{
     display: grid;
