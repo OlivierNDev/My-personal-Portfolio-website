@@ -128,7 +128,18 @@
 
          <!-- Portfolio -->
 <div id="portfolio">
-    <div class="container">
+    <div class="container"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catherine's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume.html">
+    <link rel="stylesheet" href="project.html">
+    <link rel="stylesheet" href="contact.html">
+</head>
+<body>
     <h1 class="sub-title">My Recent Work</h1>
         
     <div class="cointainer">
@@ -262,16 +273,17 @@
                         <input type="tel"name="Number" placeholder="Phone Number" required>
                         <!-- <label for="service"> </label>  -->
                         <select name="Service" id="service" required>
-                        <option value="" disabled selected> Select a service</option>
-                        <option value="collaboration">Collaboration</option>
-                        <option value="internship">Internship</option>
-                        <option value="project">Project</option>
-                        <option value="other">Others</option> 
+                          <option value="" disabled selected> Select a service</option>
+                          <option value="collaboration">Collaboration</option>
+                          <option value="internship">Internship</option>
+                          <option value="project">Project</option>
+                          <option value="other">Others</option> 
                         </select>
 
                         <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btnr">Submit</button>
+                        <button type="submit" class="btn btnr"> Submit </button> <!--I will re-check this button code to make sure, if the bug is right here or somewhere else. -->
                     </form>
+                    <span id="msg"> </span>
                 </div>
 
         </div>
@@ -317,13 +329,20 @@
         </script>
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgK-jOESgy7s7aRoDmsVbwN7uFaFnCrcMfDCsN1roiKpvhMFiT7yvo17iutrx5-CBj/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfmIlOp7XXTZJ5fO7fS1cjDpGMJ6t1CG_lIjWmGLYqlVgHvPse-VK80jwnn8cUcJq9/exec'
     const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {
+            msg.innerHTML = "Thank you for your Message"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
         .catch(error => console.error('Error!', error.message))
     })
   </script>
