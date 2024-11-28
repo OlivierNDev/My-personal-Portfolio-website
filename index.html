@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Olivier Niyonshima's Personal Portfolio Website </title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/abf6bdd114.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -23,9 +27,8 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Software engineer </p>
-                <h1> Hi, I'm <span> Olivier</span> <br> Nice to meet you !
-                </h1>
+                <p id="typing-effect">Software Engineer </p>
+                <h1> Hi, I'm <span> Olivier Niyonshima</span> <br> Nice to meet you !</h1>
 
             </div>
         </div>
@@ -35,58 +38,98 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="personal-portfolio-img/images/user.png" >
+                    <img src="personal-portfolio-img/images/user.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p> I'm your go-to frontend developer, combining a passion for clean design with strong technical skills. 
-                        I specialize in crafting intuitive, responsive, and visually
-                         appealing user interfaces that not only look great but also offer
-                          seamless experiences across devices. Whether it's turning complex
-                           ideas into simple, engaging designs or bringing creativity and 
-                           functionality together, I'm dedicated to pushing the boundaries
-                            of modern web development. Let's build something amazing that
-                             stands out in today's digital landscape <span>😊</span>
-                            </p>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link " onclick="opentab('skills')"> Skills</p>
-                                <p class="tab-links" onclick="opentab('experience')"> Experience</p>
-                                <p class="tab-links" onclick="opentab('education')"> Education</p>
-                                
-                            </div>
-                            <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
-                                    <li><span>App Development</span> <br> Building Android/iOS apps</li>
-                                    <li><span>HTML, CSS, JavaScript</span> <br> Proficient in core web technologies</li>
-                                    <li><span>CSS Frameworks</span> <br> Experience with Bootstrap, Tailwind</li>
-                                    <li><span>JavaScript Frameworks/Libraries</span> <br> Experience with React, Vue, Angular</li>
-                                    <li><span>Version Control</span> <br> Git/GitHub for collaborative development</li>
-                                    <li><span>Testing and Debugging</span> <br> Skills in unit testing and debugging</li>
-                                    
-                                    
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="experience">
-                                <ul>
-                                    <li><span>August 12 2024- current </span> <br> Part-time Data Analytics at <a href="https://zubahouse.com/" target="_blank">Zuba House</a></li>
-                                    <li><span> July 08 2023 - July 12 2024  </span> <br> UI/UX  Design at <a href="https://www.street-bridge.org/#programs" target="_blank">Here4U Program</a></li>
-                                    <li><span>October 10 2022- june 18 2023</span> <br>Computer Repair Person and It Assistant  at <a href="https://done019.wixsite.com/cardxe-store" target="_blank">CardX Ltd</a></li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="education">
-                                <ul>
-                                    <li><span>2024-2027</span> <br>  Computer Programming and Analysis at Algonquin College </li>
-                                    <li><span>2023</span> <br> UI/UX Design Training at <a href="https://gdg.community.dev/gdg-kigali/" target="_blank">Google Developer Groups Kigali </a> </li>
-                                    <li><span> 2022 </span> <br> Highschool Diploma in Physics , Chemistry and Mathematics</li>
-                                    <li><span>2020-2021</span> <br> <a href="https://tiltingfutures.org/about-us/" target="_blank"> Global Citizen  Year Leadership camp</a></li>
-                                    <li><span>2020</span> <br>  SuaCode2 Africa course by <a href="https://nsesafoundation.com/suacode/" target="_blank">Nsesa Foundation </a> </li>
-                                </ul>
-                                
-                            </div>
- 
-        
-        
+                    <p> I’m a Computer Programming and Analysis student at Algonquin College with a strong focus on
+                        building innovative software solutions.
+                        Currently working part-time as a Software Engineer and Data Analyst at Zuba House, I analyze
+                        sales and customer data, develop dashboards, and integrate e-commerce analytics. My experience
+                        includes software development, web design, stock management systems, and IT support, with
+                        previous roles at the Here4U Program and CardX Ltd. Proficient in Java, Python, JavaScript,
+                        HTML, CSS, SQL, React, and databases like Oracle and MySQL, I excel at developing scalable
+                        software and crafting intuitive, responsive websites.
+                        Teaching web programming and awards such as the KOICA Science Fair Winner highlight my
+                        dedication to learning and creating impactful projects. <span>😊</span>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Professional Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education & Achievements/Awards</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Development</span> <br> Building web and app solutions using Java,
+                                Python, JavaScript</li>
+                            <li><span>Web Development</span> <br> Proficient in HTML, CSS, and JavaScript; experience
+                                with React, Vue, and Angular</li>
+                            <li><span>CSS Frameworks</span> <br> Expertise with Bootstrap and Tailwind CSS for
+                                responsive design</li>
+                            <li><span>Data Analysis</span> <br> SQL querying, data visualization (Tableau, Python
+                                libraries), and dashboard creation</li>
+                            <li><span>Version Control</span> <br> Git/GitHub for collaborative development and code
+                                management</li>
+                            <li><span>Testing and Debugging</span> <br> Skills in unit testing, debugging, and software
+                                optimization</li>
+                            <li><span>Databases</span> <br> Proficient in MySQL and Oracle database management</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+
+
+
+                        <ul>
+                            <li><span>July 2024 – Current</span> <br> Software Engineer and Data Analyst (Part-time) at
+                                <a href="https://zubahouse.com/" target="_blank">Zuba House</a>
+                            </li>
+                            <li><span>July 2023 – July 2024</span> <br> UI/UX Design at <a
+                                    href="https://www.street-bridge.org/#programs" target="_blank">Here4U Program</a>
+                            </li>
+                            <li><span>October 2022 – June 2023</span> <br> Junior Software Engineer at <a
+                                    href="https://done019.wixsite.com/cardxe-store" target="_blank">CardX Ltd</a></li>
+                            <li><span>November 2024 – Current</span> <br> Technical Support Specialist (Part-time) at <a
+                                    href="https://ncovenant.com/" target="_blank">New Covenant Bible
+                                    Church</a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-2027</span> <br> Computer Programming and Analysis at Algonquin College,
+                                Ottawa, CA</li>
+                            <li><span>2023</span> <br> UI/UX Design Training at <a
+                                    href="https://gdg.community.dev/gdg-kigali/" target="_blank">Google Developer Groups
+                                    Kigali</a></li>
+                            <li><span>2022</span> <br> Highschool Diploma in Physics, Chemistry, and Mathematics</li>
+                            <li><span>2020-2021</span> <br> <a href="https://tiltingfutures.org/about-us/"
+                                    target="_blank">Global Citizen Year Leadership Camp</a></li>
+                            <li><span>2020</span> <br> SuaCode2 Africa course by <a
+                                    href="https://nsesafoundation.com/suacode/" target="_blank">Nsesa Foundation</a>
+                            </li>
+                            <li><span>November 2024-Present</span> <br> Certified Member of <a
+                                    href="https://www.credential.net/268b740b-a781-4b18-a227-e7242826ab05#acc.gSIMpcqh"
+                                    target="_blank">Canadian Association of IT Professionals (CIPS)</a></li>
+                            <li><span>2023</span> <br> Winner, <strong>KOICA Science Fair</strong></li>
+                            <li><span>2023</span> <br> 2nd Place, <strong>East Africa 2023 Code Beyond Barriers
+                                    Hackathon</strong></li>
+                            <li><span>2022</span> <br> Winner, <strong>Pan African Mathematics Olympiad (PAMO)</strong>
+                            </li>
+                            <li><span>2021</span> <br> Finalist, <strong>Carrefour Umurezi Math Competition</strong>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+
+
+
 
                 </div>
             </div>
@@ -94,259 +137,384 @@
         </div>
     </div>
 
-    
+
     <!-- services  -->
-<div id="services">
-    <div class="container">
-    <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-             <div> 
-                <i class="fa-solid fa-code"></i>
-                <h2> Web Design</h2>
-                <p>Building responsive, interactive, and dynamic websites using HTML, CSS, JavaScript, and modern frameworks to ensure 
-                                                a seamless user experience across devices and browsers.</p>
-                <a href="mailto:olivier.niyo250@gmail.com" target="_blank">Learn More </a>
-        </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p>Building responsive, interactive, and dynamic websites using HTML, CSS, JavaScript, and modern
+                        frameworks to ensure
+                        a seamless user experience across devices and browsers.</p>
+                    <a href="mailto:olivier.niyo250@gmail.com" target="_blank">Learn More </a>
+                </div>
 
-        
-        <div> 
-            <i class="fa-solid fa-crop"></i>
-            <h2> UI/UX Design</h2>
-            <p> Creating intuitive and user-friendly interfaces that enhance user experience, focusing on both the visual design and the overall functionality of websites and applications.</p>
-            <a href="mailto:olivier.niyo250@gmail.com" target="_blank">Learn More </a>
-        </div>
-        <div>
-            <i class="fa-brands fa-app-store"></i>
-        <h2> App Development</h2>
-        <p>Developing native and cross-platform mobile applications for Android and iOS, from concept to deployment, ensuring smooth performance and user friendly interfaces.</p>
-        <a href="mailto:olivier.niyo250@gmail.com" target="_blank">Learn More </a>
-        </div>
 
-        </div>
-
-        </div>
-
-         <!-- Portfolio -->
-<div id="portfolio">
-    <div class="container"><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catherine's Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="resume.html">
-    <link rel="stylesheet" href="project.html">
-    <link rel="stylesheet" href="contact.html">
-</head>
-<body>
-    <h1 class="sub-title">My Recent Work</h1>
-        
-    <div class="cointainer">
-        <h1 class="sub-title"></h1>
-        <p>Below are a selection of my recent design projects. If you'd like to see more projects, please reach out to me via <a href="mailto:olivier.niyo250@gmail.com" target="_blank">email</a>.</p>
-        <div class="work-list">
-            <div class="work">
-                <img src="personal-portfolio-img/images/work-1.png" >
-                <div class="layer">
-                    <h3>Zuba House E-commerce Platform </h3>
-                    <p> This is the front-end design for the Zuba House e-commerce website, which has since been further developed by my colleagues in backend development.</p>
-                    <a href="https://github.com/OlivierNDev/Zuba" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2> UI/UX Design</h2>
+                    <p> Creating intuitive and user-friendly interfaces that enhance user experience, focusing on both
+                        the visual design and the overall functionality of websites and applications.</p>
+                    <a href="mailto:olivier.niyo250@gmail.com" target="_blank">Learn More </a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2> App Development</h2>
+                    <p>Developing native and cross-platform mobile applications for Android and iOS, from concept to
+                        deployment, ensuring smooth performance and user friendly interfaces.</p>
+                    <a href="mailto:olivier.niyo250@gmail.com" target="_blank">Learn More </a>
                 </div>
 
             </div>
-            <div class="work">
-                <img src="personal-portfolio-img/images/work-2.png" >
-                <div class="layer">
-                    <h3>Here4You program by SFB  </h3>
-                    <p> I designed the frontend and UX for the 'Here for You' website, a program supporting girls' education, sponsored by the Civics Unplugged Fellowship. <a href="https://www.civicsunplugged.org/fellowship" target="_blank">Civics Unplugged Fellowship</a>, this project was awarded by the Minister of Rwanda.
-                     </p>
-                    <a href="https://www.street-bridge.org/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-
-            </div>
-            <div class="work">
-                <img src="personal-portfolio-img/images/work-3.png" >
-                <div class="layer">
-                    <h3>Baggage Check Software for Airlines </h3>
-                    <p> I developed a Java program to verify baggage size and weight, streamlining check-in,
-                         enhancing efficiency, and ensuring compliance with airline regulations.</p>
-                    <a href="https://github.com/OlivierNDev/Baggage-Check-Software-for-Airlines" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-
-                
-
-
-
-            </div>
 
         </div>
 
+        <!-- Portfolio -->
+        <div id="portfolio">
 
-        
+            <div class="container">
 
-        <!-- <a href="https://github.com/OlivierNDev?tab=repositories" class="btn">See More </a> -->
+                <body>
+                    <h2 class="live-projects-title">Live <span class="status-dot"></span> Projects</h2>
+                    <!-- Inner CSS  -->
+                    <style>
+                        .live-projects-title {
+                            display: inline-block;
 
+                            margin: 0;
+                            font-size: 60px;
+                            font-weight: 600;
+                        }
+
+                        .status-dot {
+                            width: 40px;
+                            height: 40px;
+                            background-color: green;
+                            /* Green for live status */
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-left: 8px;
+                            vertical-align: middle;
+                        }
+                    </style>
+
+                    <div class="cointainer">
+                        <h1 class="sub-title"></h1>
+                        <p>Below are a selection of my recent live projects. These are actively hosted and fully
+                            functional. If you'd like to explore more or have any questions, feel free to reach out to
+                            me via <a href="mailto:olivier.niyo250@gmail.com">email</a>.</p>
+                        <div class="work-list">
+                            <div class="work">
+                                <img src="personal-portfolio-img/images/work-1.png">
+                                <div class="layer">
+                                    <h3>Zuba House E-commerce Platform </h3>
+                                    <p> A fully responsive e-commerce website for selling cultural materials. Includes
+                                        user authentication, product search, and secure payment integration.
+                                        I did the frontend development. <a href="https://github.com/OlivierNDev/Zuba"
+                                            target="_blank"> GitHub Link </a></p>
+                                    <a href="https://zubahouse.com/" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="work">
+                                <img src="personal-portfolio-img/images/church.jpg">
+                                <div class="layer">
+
+                                    <p> NCBC </p>
+                                    <h2> New Covenant Bible Church Webs</h2>
+                                    <a href="https://ncovenant.com/" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <video width="650" height="800" controls autoplay loop muted>
+                                        <source src="personal-portfolio-img/images/church.mp4" type="video/mp4">
+
+                                    </video>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div class="work">
+                                <img src="personal-portfolio-img/images/academia.jpg">
+                                <div class="layer">
+                                    <h3>Cardx Academia and Travel Tours Website</h3>
+                                    <p> Cardx Academia is an educational consultancy and travel agency that helps
+                                        students gain admission to top institutions worldwide while providing expert
+                                        guidance through the visa application process.
+                                        I designed the company's website, ensuring it was both user-friendly and
+                                        visually appealing.</p>
+                                    <a href="https://cardxacademia.com/" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <!-- <a href="https://github.com/OlivierNDev?tab=repositories" class="btn">See More </a> -->
+
+                    </div>
+            </div>
+        </div>
+
+        <!-- Some updates -->
+
+        <div id="portfolio">
+
+            <div class="container">
+
+                <body>
+                    <h1 class="sub-title">Ongoing Projects
+
+                    </h1>
+
+                    <div class="cointainer">
+                        <h1 class="sub-title"></h1>
+                        <p>These are projects that I am currently working on. If you'd like more details, feel free to
+                            reach out to me. <a href="mailto:olivier.niyo250@gmail.com" target="_blank">email</a>.</p>
+                        <div class="work-list">
+                            <div class="work">
+                                <img src="personal-portfolio-img/images/Mediku u.jpg">
+                                <div class="layer">
+                                    <h3>Mediku Ai ChatBot </h3>
+                                    <p>
+                                        I developed an AI-powered healthcare chatbot to provide instant, reliable
+                                        medical information, improving healthcare access in Rwanda and Africa.
+                                        The project has attracted government interest for potential collaboration and
+                                        further development.</p>
+                                    <a href="https://github.com/OlivierNDev/Mediku-" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="work">
+                                <img src="personal-portfolio-img/images/work-2.png">
+                                <div class="layer">
+                                    <h3>Here4You program by SFB </h3>
+                                    <p> I designed the frontend and UX for the 'Here for You' website, a program
+                                        supporting girls' education, sponsored by the Civics Unplugged Fellowship. <a
+                                            href="https://www.civicsunplugged.org/fellowship" target="_blank">Civics
+                                            Unplugged Fellowship</a>, this project was awarded by the Minister of
+                                        Rwanda.
+                                    </p>
+                                    <a href="https://street-bridge-foundation-1.vercel.app/" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+
+                            </div>
+                            <div class="work">
+                                <img src="personal-portfolio-img/images/work-3.png">
+                                <div class="layer">
+                                    <h3>Baggage Check Software for Airlines </h3>
+                                    <p> I developed a Java program to verify baggage size and weight, streamlining
+                                        check-in,
+                                        enhancing efficiency, and ensuring compliance with airline regulations.</p>
+                                    <a href="https://github.com/OlivierNDev/Baggage-Check-Software-for-Airlines"
+                                        target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <!-- <a href="https://github.com/OlivierNDev?tab=repositories" class="btn">See More </a> -->
+
+                    </div>
+            </div>
+        </div>
+
+        <div id="portfolio"></div>
+        <div class="container">
+            <!-- <h1 class="sub-title">My Recent Work</h1> -->
+
+            <div class="cointainer">
+                <h1 class="sub-title"></h1>
+                <!-- <p>Below are a selection of my recent design projects. If you'd like to see more projects, please reach out to me via <a href="mailto:olivier.niyo250@gmail.com">email</a>.</p> -->
+                <div class="work-list">
+                    <div class="work">
+                        <img src="personal-portfolio-img/images/donut.png">
+                        <div class="layer">
+                            <h3> Restaurant Donut Volume Estimator </h3>
+                            <p>
+                                I developed a Java program to estimate the volume of a squashed donut,
+                                handling user inputs and managing edge cases like negative values effectively.</p>
+                            <a href="https://github.com/OlivierNDev/Donut-Volume-Estimator" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="personal-portfolio-img/images/cal.png">
+                        <div class="layer">
+                            <h3>Calculator App </h3>
+                            <p>
+                                I developed a Python calculator app
+                                using Kivy for basic arithmetic with a responsive interface, handling errors and
+                                updating results dynamically.</p>
+                            <a href="https://github.com/OlivierNDev/Calculator-App" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="personal-portfolio-img/images/snake.png">
+                        <div class="layer">
+
+                            <p> Learn More </p>
+                            <h2> Python Snake Game </h2>
+                            <a href="https://github.com/OlivierNDev/PythonSnakeGame" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <video width="650" height="800" controls autoplay loop muted>
+                                <source src="personal-portfolio-img/images/snake.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <a href="https://github.com/OlivierNDev?tab=repositories" class="btn" target="_blank">See More </a>
+
+            </div>
+        </div>
     </div>
-    </div> 
-</div>
-<div id="portfolio"></div>
-    <div class="container">
-    <!-- <h1 class="sub-title">My Recent Work</h1> -->
-        
-    <div class="cointainer">
-        <h1 class="sub-title"></h1>
-        <!-- <p>Below are a selection of my recent design projects. If you'd like to see more projects, please reach out to me via <a href="mailto:olivier.niyo250@gmail.com">email</a>.</p> -->
-        <div class="work-list">
-            <div class="work">
-                <img src="personal-portfolio-img/images/donut.png" >
-                <div class="layer">
-                    <h3> Restaurant Donut Volume Estimator </h3>
-                    <p> 
-                        I developed a Java program to estimate the volume of a squashed donut, 
-                        handling user inputs and managing edge cases like negative values effectively.</p>
-                    <a href="https://github.com/OlivierNDev/Donut-Volume-Estimator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> <a href="mailto:olivier.niyo250@gmail.com"
+                            target="_blank">olivier.niyo250@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> +1(437)-557-7487</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/OlivierNDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/olivier-niyonshima-aa2b36236/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="personal-portfolio-img/images/resume_olivier_Niyonshima.pdf" download class="btn btnr"
+                        target="_blank"> Download My Resume</a>
+
                 </div>
-
-            </div>
-            <div class="work">
-                <img src="personal-portfolio-img/images/cal.png" >
-                <div class="layer">
-                    <h3>Calculator App </h3>
-                    <p> 
-                        I developed a Python calculator app 
-                        using Kivy for basic arithmetic with a responsive interface, handling errors and updating results dynamically.</p>
-                    <a href="https://github.com/OlivierNDev/Calculator-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-
-            </div>
-            <div class="work">
-                <img src="personal-portfolio-img/images/snake.png" >
-                <div class="layer">
-                    
-                    <p>  Learn More </p>
-                    <h2> Python Snake Game  </h2>
-                    <a href="https://github.com/OlivierNDev/PythonSnakeGame" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <video width="650" height="800" controls autoplay loop muted>
-                        <source src="personal-portfolio-img/images/snake.mp4" type="video/mp4" >
-                        
-                      </video>
-                </div>
-
-                
-
-
-
-            </div>
-
-        </div>
-
-
-        
-
-        <a href="https://github.com/OlivierNDev?tab=repositories" class="btn" target="_blank">See More </a>
-
-    </div>
-    </div> 
-</div>
-
-<!-- Contact -->
- <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me </h1>
-                <p><i class="fa-regular fa-paper-plane"></i> <a href="mailto:olivier.niyo250@gmail.com" target="_blank">olivier.niyo250@gmail.com</a></p>
-                <p><i class="fa-solid fa-phone"></i> +1(437)-557-7487</p>
-                <div class="social-icons">
-                    <a href="https://github.com/OlivierNDev" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/olivier-niyonshima-aa2b36236/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      
-                </div>
-                <a href="personal-portfolio-img/images/resume_olivier_Niyonshima.pdf" download class="btn btnr" target="_blank"> Download My Resume</a> 
-
-            </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text"name="Name" placeholder="Your Name " required>
-                        <input type="email"name="Email" placeholder="Your Email" required>
-                        <input type="tel"name="Number" placeholder="Phone Number" required>
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="tel" name="Number" placeholder="Phone Number" required>
                         <!-- <label for="service"> </label>  -->
                         <select name="Service" id="service" required>
-                          <option value="" disabled selected> Select a service</option>
-                          <option value="collaboration">Collaboration</option>
-                          <option value="internship">Internship</option>
-                          <option value="project">Project</option>
-                          <option value="other">Others</option> 
+                            <option value="" disabled selected> Select a service</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="internship">Internship</option>
+                            <option value="project">Project</option>
+                            <option value="other">Others</option>
                         </select>
 
                         <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btnr"> Submit </button> <!--I will re-check this button code to make sure, if the bug is right here or somewhere else. -->
+                        <button type="submit" class="btn btnr"> Submit </button>
+                        <!--I will re-check this button code to make sure, if the bug is right here or somewhere else. -->
                     </form>
                     <span id="msg"> </span>
                 </div>
 
+            </div>
         </div>
+        <div class="copyright">
+            <p>&copy; 2020-2024 All rights reserved. Designed by Olivier.N </p>
+        </div>
+
     </div>
-    <div class="copyright">
-    <p>&copy; 2020-2024 All rights reserved. Designed by Olivier.N </p>
-    </div>
-
- </div>
-    
 
 
-        <script>
-            var tablinks =document.getElementsByClassName("tab-links");
-            var tabcontents =document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
 
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-
-
-            
-        </script>
-        <script>
-
-            var sidemenu = document.getElementById("sidemenu");
-            function openmenu(){
-                sidemenu.style.right = "0";
-                //everytime we click on function open menu, and when the right is 0 it will be visible.
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
 
             }
-            function closemenu(){
-                sidemenu.style.right = "-250px";
-            }
-        </script>
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfmIlOp7XXTZJ5fO7fS1cjDpGMJ6t1CG_lIjWmGLYqlVgHvPse-VK80jwnn8cUcJq9/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Thank you for your Message"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+            //everytime we click on function open menu, and when the right is 0 it will be visible.
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-250px";
+        }
+    </script>
+<!-- typescript  -->
+    <script> 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwfmIlOp7XXTZJ5fO7fS1cjDpGMJ6t1CG_lIjWmGLYqlVgHvPse-VK80jwnn8cUcJq9/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Thank you for your Message"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-        
+
+        document.addEventListener("DOMContentLoaded", function () {
+            new Typed("#typing-effect", {
+                strings: ["Software Engineer", "Web Designer", "Data Analyst"],
+                typeSpeed: 50, // Speed of typing
+                backSpeed: 30, // Speed of backspacing
+                backDelay: 1500, // Delay before backspacing
+                loop: true, // to keep looping 
+            });
+        });
+
+
+    </script>
+
 
 </body>
 
