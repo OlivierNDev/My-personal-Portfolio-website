@@ -523,23 +523,26 @@
 
                 </div>
                 <div class="contact-right">
-                    <form action="process_form.php" method="post" enctype="multipart/form-data">
-                        <input type="text" name="Name" placeholder="Your Name" required>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name " required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <input type="tel" name="Number" placeholder="Phone Number" required>
+                        <!-- <label for="service"> </label>  -->
                         <select name="Service" id="service" required>
-                            <option value="" disabled selected>Select a service</option>
+                            <option value="" disabled selected> Select a service</option>
                             <option value="collaboration">Collaboration</option>
                             <option value="internship">Internship</option>
                             <option value="project">Project</option>
                             <option value="other">Others</option>
                         </select>
+
                         <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                        <input type="file" name="File" id="file-upload">
-                        <button type="submit" class="btn btnr">Submit</button>
+                        <button type="submit" class="btn btnr"> Submit </button>
+                        <!--I will re-check this button code to make sure, if the bug is right here or somewhere else. -->
                     </form>
-                    <span id="msg"></span>
+                    <span id="msg"> </span>
                 </div>
+
             </div>
         </div>
         <div class="copyright">
