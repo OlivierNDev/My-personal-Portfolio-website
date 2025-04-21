@@ -5,61 +5,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $number = $_POST['Number'];
     $service = $_POST['Service'];
     $message = $_POST['Message'];
-    
+
     // File upload handling
-    $file_attached = false;
-    if(isset($_FILES['File']) && $_FILES['File']['error'] == UPLOAD_ERR_OK) {
-        $file_attached = true;
-        $file_name = $_FILES['File']['name'];
-        $file_tmp = $_FILES['File']['tmp_name'];
-        $file_type = $_FILES['File']['type'];
-        $file_size = $_FILES['File']['size'];
+    $target_dir = "uploads/";
+    if (!file_exists($target_dir)) {
+        mkdir($target_dir, 0777, true);
     }
 
-    $to = "olivier.niyo250@gmail.com";
-    $subject = "New Contact Form Submission: $service";
+    $file_name = $_FILES["File"]["name"];
+    $target_file = $target_dir . basename($file_name);
+    move_uploaded_file($_FILES["File"]["tmp_name"], $target_file);
+
+    $to = "youremail@example.com";
+    $subject = "New Portfolio Form Submission";
+    $body = "Name: $name\nEmail: $email\nPhone: $number\nService: $service\nMessage:\n$message\nFile: $target_file";
     $headers = "From: $email";
-    
-    $email_body = "Name: $name\n".
-                  "Email: $email\n".
-                  "Phone: $number\n".
-                  "Service: $service\n".
-                  "Message:\n$message\n";
-    
-    // For HTML emails:
-    $headers = "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    
-    // Boundary for multipart
-    $boundary = md5(time());
-    $headers = "MIME-Version: 1.0\r\n";
-    $headers .= "From: $email\r\n";
-    $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
-    
-    // Message body
-    $body = "--$boundary\r\n";
-    $body .= "Content-Type: text/plain; charset=UTF-8\r\n";
-    $body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
-    $body .= $email_body."\r\n";
-    
-    // Attach file
-    if($file_attached) {
-        $file_content = file_get_contents($file_tmp);
-        $file_content = chunk_split(base64_encode($file_content));
-        $body .= "--$boundary\r\n";
-        $body .= "Content-Type: $file_type; name=\"$file_name\"\r\n";
-        $body .= "Content-Disposition: attachment; filename=\"$file_name\"\r\n";
-        $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
-        $body .= $file_content."\r\n";
-    }
-    
-    $body .= "--$boundary--";
-    
-    // Send email
-    if(mail($to, $subject, $body, $headers)) {
-        echo "Thank you for your message!";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message sent successfully!";
     } else {
-        echo "There was a problem sending your message.";
+        echo "Something went wrong.";
     }
 }
 ?>
